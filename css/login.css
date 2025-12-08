@@ -1,0 +1,381 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(black, #1a1a1a);
+  color: white;
+}
+
+.fundo{
+  background-image: url(../img/fundo2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1400px;
+}
+
+.header {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  position: fixed;
+  background-color: #020202b9;
+  font-family: "Raleway";
+  padding: 0 40px;      
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  width: 400px;                
+  height: 250px;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-height: 80px;
+}
+
+.navbar{
+  justify-content: right;
+  text-align: right;
+  margin-right: 50px;
+  display: flex;
+}
+
+.Navegacao{
+  justify-content: center;
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  font-family:"Raleway";
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  color: #00ffea;
+  transform: scale(1.1);
+  cursor: pointer;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container principal */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('bannerfunk.jpg') no-repeat center center/cover;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Formulário */
+.login-form {
+  font-family:"Raleway";
+  background-color: rgba(0, 0, 0, 0.822);
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ff007f;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Campos de Entrada */
+.login-form label {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #00ffea;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+}
+
+.login-form input::placeholder {
+  color: #ccc;
+}
+
+.login-form input:focus {
+  outline: none;
+  background-color: rgba(0, 255, 234, 0.15);
+  border: 2px solid #00ffea;
+  transition: background 0.3s ease;
+}
+
+/* Grupo de Botões */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.button-group button {
+  font-family:"Raleway";
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  background: #00ffea;
+  color: black;
+  font-size: 1rem;
+  width: 100px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+  background: #00c0b3;
+}
+
+/* Mensagens de sucesso e erro */
+.success {
+  padding: 15px;
+  background: #00ffea;
+  color: black;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff007f;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input, form button {
+  font-family:"Raleway";
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  margin-top: 30px;
+}
+
+form input:focus{
+  outline: none;
+  border: 2px solid #00ffea;
+}
+
+form button {
+  font-family:"Raleway";
+  background: #ff007f;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+
+form button:hover {
+  background: #96014b;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.icon{
+  height: 60px;
+  width: 60px;
+  padding:20px;
+}
+
+.icon:hover{
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  transform:scale(1.5);
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p:hover{
+  cursor: pointer;
+  transition: 1s;
+  transform:perspective(5px);
+}
+
+.cadastro{
+  font-family:"Raleway";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cadastro input:focus{
+  outline: none;
+  color: white;
+  background-color: rgba(0, 255, 234, 0.15);
+  border: 2px solid #00ffea;
+  transition: background 0.3s ease;
+}
+
+.mensagem {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Mensagem de erro */
+.mensagem.erro {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas até 768px - Tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .banner {
+    height: 600px;
+    padding: 20px;
+  }
+
+  .login-form {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  form input, form button {
+    max-width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Telas até 480px - Celulares */
+@media (max-width: 480px) {
+  body {
+    font-size: 90%;
+  }
+
+  .banner {
+    height: 500px;
+    padding: 20px 10px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .button-group button {
+    max-width: 100%;
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+  }
+}
+
