@@ -1,381 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(black, #1a1a1a);
-  color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-.fundo{
-  background-image: url(../img/fundo2.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 1400px;
+/* Partículas de fundo */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
 }
 
-.header {
-  height: 120px;
-  width: 100%;
-  display: flex;
-  align-items: center;       
-  justify-content: space-between; 
-  position: fixed;
-  background-color: #020202b9;
-  font-family: "Raleway";
-  padding: 0 40px;      
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 255, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 10px 40px rgba(0, 255, 234, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;      
-  width: 400px;                
-  height: 250px;
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #00ffea, #ff007f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
-.logo img {
-  display: block;
-  margin: 0 auto;
-  max-height: 80px;
+.logo:hover {
+    transform: scale(1.05);
 }
 
-.navbar{
-  justify-content: right;
-  text-align: right;
-  margin-right: 50px;
-  display: flex;
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
 }
 
-.Navegacao{
-  justify-content: center;
-  display: flex;
-  margin-right: 30px;
-  align-items: center;
-  font-family:"Raleway";
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.navbar li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ffea, #ff007f);
+    transition: width 0.3s ease;
 }
 
-.navbar a {
-  list-style: none;
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 700;
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
-  white-space: nowrap;
+.nav-links a:hover {
+    color: #00ffea;
 }
 
-.navbar a:hover {
-  color: #00ffea;
-  transform: scale(1.1);
-  cursor: pointer;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Container principal */
-.container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.banner {
-  text-align: center;
-  padding: 50px 20px;
-  background: url('bannerfunk.jpg') no-repeat center center/cover;
-  height: 1100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-blend-mode: overlay;
-  background-color: rgba(0,0,0,0.5);
-}
-
-/* Formulário */
-.login-form {
-  font-family:"Raleway";
-  background-color: rgba(0, 0, 0, 0.822);
-  padding: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #ff007f;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.login-form h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: white;
-}
-
-/* Campos de Entrada */
-.login-form label {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 1rem;
-}
-
-.login-form input {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #00ffea;
-  border-radius: 30px;
-  color: white;
-  font-size: 1em;
-}
-
-.login-form input::placeholder {
-  color: #ccc;
-}
-
-.login-form input:focus {
-  outline: none;
-  background-color: rgba(0, 255, 234, 0.15);
-  border: 2px solid #00ffea;
-  transition: background 0.3s ease;
-}
-
-/* Grupo de Botões */
-.button-group {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.button-group button {
-  font-family:"Raleway";
-  flex: 1;
-  margin: 0 5px;
-  padding: 12px;
-  background: #00ffea;
-  color: black;
-  font-size: 1rem;
-  width: 100px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button-group button:hover {
-  background: #00c0b3;
-}
-
-/* Mensagens de sucesso e erro */
-.success {
-  padding: 15px;
-  background: #00ffea;
-  color: black;
-  border-radius: 30px;
-  font-size: 1rem;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.error {
-  color: #ff007f;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-form input, form button {
-  font-family:"Raleway";
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 10px auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 15px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1em;
-  margin-top: 30px;
-}
-
-form input:focus{
-  outline: none;
-  border: 2px solid #00ffea;
-}
-
-form button {
-  font-family:"Raleway";
-  background: #ff007f;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 500px;
-}
-
-form button:hover {
-  background: #96014b;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.icon{
-  height: 60px;
-  width: 60px;
-  padding:20px;
-}
-
-.icon:hover{
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  transform:scale(1.5);
-}
-
-footer {
-  background: #111;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p:hover{
-  cursor: pointer;
-  transition: 1s;
-  transform:perspective(5px);
-}
-
-.cadastro{
-  font-family:"Raleway";
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.cadastro input:focus{
-  outline: none;
-  color: white;
-  background-color: rgba(0, 255, 234, 0.15);
-  border: 2px solid #00ffea;
-  transition: background 0.3s ease;
-}
-
-.mensagem {
-  color: #155724;
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  animation: fadeIn 0.8s ease forwards;
-}
-
-/* Mensagem de erro */
-.mensagem.erro {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-}
-
-/* RESPONSIVIDADE */
-
-/* Telas até 768px - Tablets */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .logo {
+.nav-links a:hover::after {
     width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .navbar {
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .banner {
-    height: 600px;
-    padding: 20px;
-  }
-
-  .login-form {
-    padding: 30px;
-    margin: 20px;
-  }
-
-  form input, form button {
-    max-width: 100%;
-  }
-
-  .button-group {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 
-/* Telas até 480px - Celulares */
-@media (max-width: 480px) {
-  body {
-    font-size: 90%;
-  }
+.mobile-menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
 
-  .banner {
-    height: 500px;
-    padding: 20px 10px;
-  }
+/* Hero Section */
+.hero-login {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 20px 50px;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 234, 0.1), transparent 70%);
+}
 
-  .header {
-    padding: 10px;
-  }
+.hero-login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(0,255,234);stop-opacity:0.2" /><stop offset="100%" style="stop-color:rgb(255,0,127);stop-opacity:0.2" /></linearGradient></defs><circle cx="500" cy="500" r="400" fill="url(%23grad)" /></svg>');
+    background-size: cover;
+    animation: pulse 8s ease-in-out infinite;
+    opacity: 0.3;
+}
 
-  .navbar {
-    flex-direction: column;
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Container do Formulário */
+.form-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 80px rgba(0, 255, 234, 0.2);
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #00ffea, #ff007f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #00ffea;
+    background: rgba(0, 255, 234, 0.1);
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
+    transform: scale(1.02);
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #00ffea;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 20px;
-  }
-
-  .login-form {
-    padding: 20px;
-  }
-
-  .button-group button {
-    max-width: 100%;
-  }
-
-  .icon {
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-  }
 }
 
+.remember-me input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.forgot-password {
+    color: #00ffea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #ff007f;
+    text-decoration: underline;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.login-link a {
+    color: #00ffea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #ff007f;
+    text-decoration: underline;
+}
+
+/* Botão Submit */
+.submit-btn {
+    width: 100%;
+    padding: 1.3rem;
+    background: linear-gradient(135deg, #00ffea, #ff007f);
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.submit-btn:hover::before {
+    width: 400px;
+    height: 400px;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 255, 234, 0.5);
+}
+
+.submit-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mensagens */
+.message {
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.message.success {
+    background: rgba(0, 255, 234, 0.2);
+    border: 1px solid #00ffea;
+    color: #00ffea;
+}
+
+.message.error {
+    background: rgba(255, 0, 127, 0.2);
+    border: 1px solid #ff007f;
+    color: #ff007f;
+}
+
+.progress-bar {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffea, #ff007f);
+    width: 0;
+    transition: width 0.1s linear;
+}
+
+/* Seção de Contato */
+.contact-section {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 5%;
+    background: linear-gradient(180deg, #000, #0a0a0a);
+}
+
+.contact-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #00ffea, #ff007f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.social-icon:hover {
+    background: linear-gradient(135deg, #00ffea, #ff007f);
+    transform: translateY(-5px) rotate(360deg);
+    box-shadow: 0 10px 30px rgba(0, 255, 234, 0.5);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 5%;
+    background: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer p:hover {
+    color: #00ffea;
+    transition: color 0.3s ease;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .form-container {
+        padding: 2rem;
+    }
+
+    .form-container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-login {
+        padding: 120px 15px 30px;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}

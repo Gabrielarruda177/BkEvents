@@ -1,131 +1,347 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baile do Funk - Oficial</title>
-
-    <!-- Importa o CSS principal -->
+    <title>BK Eventos - A Maior Organizadora de Shows do Mundo</title>
     <link rel="stylesheet" href="css/home.css">
-
-    <!-- Ícone da aba -->
-    <link rel="icon" href="../BkEvents/img/logo.png">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-
-    
 </head>
-
 <body>
-<div class="fundo">
-    <div class="background">
+    <canvas id="particles"></canvas>
 
-        <div class="navbar">
-          <nav>
-            <ul class="Navegacao">
-              <li><a href="Home.html">Home</a></li>
-              <li><a href="galeria.php">Galeria</a></li>
-              <li><a href="cadastro.php">Cadastro</a></li>
-              <li><a href="login.php">Login</a></li>
+    <header id="header">
+        <nav>
+            <div class="logo">BK EVENTOS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="galeria.php">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="cadastro.php">Cadastro</a></li>
             </ul>
-          </nav>
-        </div>
-      </header>
 
-            <section class="banner">
-                <div class="text-container">
-                    <h2 class="h2-1">
-                        BK Eventos é a maior organizadora de shows do mundo, reconhecida por transformar cada evento em uma
-                        experiência inesquecível.
-                    </h2>
-                    <br>
-                    <h2 class="h2-2">
-                        Comandada por Kauã Amorim e Gabriel Arruda, a empresa atua há mais de 10 anos no mercado, sendo referência na produção de shows e eventos no cenário artístico nacional e internacional.
-                    </h2>
-                    <br><br>
-                    <h2 class="h2-3">
-                        Responsável por grandes produções como Funk no Morro (10/06/2025 – São Paulo) e Noite do Pancadão (24/06/2025 – Rio de Janeiro),
-                        a BK Eventos é sinônimo de qualidade, inovação e paixão pela música.
-                    </h2>
+            <div class="mobile-menu-btn">☰</div>
+        </nav>
+    </header>
 
-                    <!-- Contador (um único ID é suficiente!) -->
-                    <div class="contador" id="contador" class="contador"></div>
-
-                    <a href="#cadastro" class="btn">Garanta seu ingresso</a>
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>A MAIOR ORGANIZADORA DE SHOWS DO MUNDO</h1>
+            <p>Comandada por Kauã Amorim e Gabriel Arruda, transformamos cada evento em uma experiência inesquecível há mais de 10 anos.</p>
+            
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Dias</span>
                 </div>
-
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/QB8bgc6hwl8" title="YouTube video player" allowfullscreen></iframe>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
                 </div>
-            </section>
-</div>
-
-            <!-- Carrossel de logos dos parceiros -->
-            <div class="logos">
-                <h1 class="h1-carrossel">Parceiros</h1>
-                <div class="logos-slide">
-                    <img src="./img/lolapalloza.png" />
-                    <img src="./img/love.png" />
-                    <img src="./img/kondzilla.png" />
-                    <img src="./img/gr6.png" />
-                    <img src="./img/mainstreet.png" />
-                    <img src="./img/rock.png" />
-                    <img src="./img/livenation.png" />
-                    <img src="./img/portal.png" />
-
-                    <!--Teste-->
-
-                    <img src="./img/lolapalloza.png" />
-                    <img src="./img/love.png" />
-                    <img src="./img/kondzilla.png" />
-                    <img src="./img/gr6.png" />
-                    <img src="./img/mainstreet.png" />
-                    <img src="./img/rock.png" />
-                    <img src="./img/livenation.png" />
-                    <img src="./img/portal.png" />
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
                 </div>
             </div>
+
+            <a href="#contact" class="cta-button">GARANTA SEU INGRESSO</a>
         </div>
-    </div>
+    </section>
 
+    <section class="partners">
+        <h2>Nossos Parceiros</h2>
+        <div class="partners-carousel">
+            <div class="partners-track">
+                <div class="partner-card">LOLLAPALOOZA</div>
+                <div class="partner-card">LOVE FEST</div>
+                <div class="partner-card">KONDZILLA</div>
+                <div class="partner-card">GR6 EXPLODE</div>
+                <div class="partner-card">MAIN STREET</div>
+                <div class="partner-card">ROCK IN RIO</div>
+                <div class="partner-card">LIVE NATION</div>
+                <div class="partner-card">PORTAL SHOWS</div>
+                <div class="partner-card">LOLLAPALOOZA</div>
+                <div class="partner-card">LOVE FEST</div>
+                <div class="partner-card">KONDZILLA</div>
+                <div class="partner-card">GR6 EXPLODE</div>
+                <div class="partner-card">MAIN STREET</div>
+                <div class="partner-card">ROCK IN RIO</div>
+                <div class="partner-card">LIVE NATION</div>
+                <div class="partner-card">PORTAL SHOWS</div>
+            </div>
+        </div>
+    </section>
 
+    <section class="events" id="events">
+        <h2>Próximos Eventos</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <h3>🎵 Funk no Morro</h3>
+                <div class="date">📅 10 de Junho de 2025</div>
+                <div class="location">📍 São Paulo - SP</div>
+                <p class="description">
+                    O maior festival de funk do Brasil! Uma noite épica com os melhores MCs do país, 
+                    palcos múltiplos e uma produção de nível internacional que vai fazer história.
+                </p>
+            </div>
+            <div class="event-card">
+                <h3>🔥 Noite do Pancadão</h3>
+                <div class="date">📅 24 de Junho de 2025</div>
+                <div class="location">📍 Rio de Janeiro - RJ</div>
+                <p class="description">
+                    Prepare-se para a festa mais intensa do ano! Som automotivo de primeira, 
+                    DJs renomados e uma atmosfera que vai fazer você vibrar até o amanhecer.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Seção de informações e cadastro -->
-    <div class="info">
-        <section id="eventos" class="eventos">
-            <h2>Próximos Eventos</h2>
-            <ul>
-                <li>📍 Funk no Morro - 10/06/2025 - São Paulo</li>
-                <li>📍 Noite do Pancadão - 24/06/2025 - Rio de Janeiro</li>
-            </ul>
-        </section>
+    <section class="video-section" id="video">
+        <h2>Veja Nossos Eventos</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/QB8bgc6hwl8" allowfullscreen></iframe>
+        </div>
+    </section>
 
-        <section id="cadastro" class="cadastro">
-            <form>
-                <h2 class="h2-contato">Contato</h2>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <button type="submit">Enviar</button>
+    <section class="contact" id="contact">
+        <h2>Entre em Contato</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">ENVIAR MENSAGEM</button>
             </form>
 
-            <a href="https://web.whatsapp.com/"><img src="../BkEvents/img/whatsapp.png" class="icon"></a>
-            <a href="https://www.instagram.com/gb___silvaaa/"><img src="../BkEvents/img/instagram.png" class="icon"></a>
-        </section>
-    </div>
+            <div class="social-links">
+                <div class="social-icon" onclick="window.open('https://web.whatsapp.com/', '_blank')">📱</div>
+                <div class="social-icon" onclick="window.open('https://www.instagram.com/', '_blank')">📸</div>
+                <div class="social-icon">✉️</div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Rodapé -->
-    <footer id="contato">
-        <p>© 2025 BK Eventos | All Rights Reserved</p>
+    <footer>
+        <p>© 2025 BK Eventos | Todos os Direitos Reservados | Criando Experiências Inesquecíveis</p>
     </footer>
 
-  
-    <script src="js/home.js"></script>
-</body>
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const particleCount = 100;
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 2 - 1;
+                this.speedY = Math.random() * 2 - 1;
+                this.color = Math.random() > 0.5 ? 'rgba(0, 255, 234, 0.5)' : 'rgba(255, 0, 127, 0.5)';
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
+                if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 100) {
+                        ctx.strokeStyle = `rgba(0, 255, 234, ${0.2 - distance / 500})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            requestAnimationFrame(animateParticles);
+        }
+
+        animateParticles();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        function updateCountdown() {
+            const eventDate = new Date('2026-01-28T20:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<h2>O evento começou!</h2>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            e.target.reset();
+        });
+
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.event-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        document.querySelectorAll('.partner-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '100%';
+            navLinks.style.left = '0';
+            navLinks.style.right = '0';
+            navLinks.style.background = 'rgba(0, 0, 0, 0.95)';
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.padding = '2rem';
+            navLinks.style.gap = '1.5rem';
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBg = document.querySelector('.hero-bg');
+            if (heroBg) {
+                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        const heroTitle = document.querySelector('.hero h1');
+        const titleText = heroTitle.textContent;
+        heroTitle.textContent = '';
+        let i = 0;
+
+        function typeWriter() {
+            if (i < titleText.length) {
+                heroTitle.textContent += titleText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+
+        setTimeout(typeWriter, 500);
+
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                button.style.setProperty('--x', `${x}px`);
+                button.style.setProperty('--y', `${y}px`);
+            });
+        });
+
+        console.log('%cBK EVENTOS 🎉', 'color: #00ffea; font-size: 30px; font-weight: bold; text-shadow: 0 0 10px #00ffea;');
+        console.log('%cSite desenvolvido com as tecnologias mais modernas!', 'color: #ff007f; font-size: 14px;');
+    </script>
+
+    </body>
 </html>

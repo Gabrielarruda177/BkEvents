@@ -22,7 +22,6 @@ $dadosUsuario = $consultaUsuario->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
     <div class="dashboard">
-        <!-- Menu Lateral -->
       <aside class="sidebar">
             <h2><a href="dashboard.php">Menu</a></h2>
 
