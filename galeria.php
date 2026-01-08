@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Eventos - BK Eventos</title>
     <link rel="stylesheet" href="css/galeria.css"> 
-  </head>
+        
+</head>
 <body>
     <!-- Partículas -->
     <canvas id="particles"></canvas>
@@ -49,7 +50,7 @@
     <div class="gallery-container">
         <div class="cards-grid" id="cardsGrid">
             <!-- Card 1 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="1" data-event-name="Lollapalooza Brasil 2025" data-event-price="350.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/lollapalooza/400/250.jpg" alt="Lollapalooza Brasil 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -73,14 +74,14 @@
                     <p class="card-description">
                         O maior festival de música do Brasil com lineup internacional, gastronomia e experiências únicas!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="2" data-event-name="Rock in Rio 2025" data-event-price="450.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/rockinrio/400/250.jpg" alt="Rock in Rio 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -104,14 +105,14 @@
                     <p class="card-description">
                         O festival mais icônico do mundo volta com grandes nomes da música internacional e nacional!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="3" data-event-name="Primavera Sound 2025" data-event-price="280.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/primaverasound/400/250.jpg" alt="Primavera Sound 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -135,14 +136,14 @@
                     <p class="card-description">
                         Festival indie com artistas alternativos e underground de todo o mundo!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="4" data-event-name="Coala Festival 2025" data-event-price="220.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/coalafestival/400/250.jpg" alt="Coala Festival 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -166,14 +167,14 @@
                     <p class="card-description">
                         Festival com curadoria especial focada em música eletrônica e cultura urbana!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="5" data-event-name="Festival Turá 2025" data-event-price="180.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/festivaltura/400/250.jpg" alt="Festival Turá 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -197,14 +198,14 @@
                     <p class="card-description">
                         Celebração da música brasileira com artistas consagrados e emergentes!
                     </p>
-                    <button class="card-button">
+                    <button class="card-button buy-ticket-btn">
                         <span>PRÉ-CADASTRO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 6 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="6" data-event-name="Queremos! Festival 2025" data-event-price="150.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/queremosfestival/400/250.jpg" alt="Queremos! Festival 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -228,14 +229,14 @@
                     <p class="card-description">
                         Festival democrático onde o público escolhe os artistas através de votação!
                     </p>
-                    <button class="card-button">
+                    <button class="card-button buy-ticket-btn">
                         <span>PRÉ-CADASTRO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 7 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="7" data-event-name="Festival MIMO 2025" data-event-price="120.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/festivalmimo/400/250.jpg" alt="Festival MIMO 2025">
                     <div class="card-badge">FESTIVAL</div>
@@ -259,14 +260,14 @@
                     <p class="card-description">
                         Festival de música instrumental com jazz, blues e música brasileira em diversos pontos da cidade!
                     </p>
-                    <button class="card-button">
+                    <button class="card-button buy-ticket-btn">
                         <span>PRÉ-CADASTRO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 8 -->
-            <div class="event-card" data-category="festival">
+            <div class="event-card" data-category="festival" data-event-id="8" data-event-name="Rio das Ostras Jazz & Blues" data-event-price="0.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/riojazzblues/400/250.jpg" alt="Rio das Ostras Jazz & Blues">
                     <div class="card-badge">FESTIVAL</div>
@@ -290,14 +291,14 @@
                     <p class="card-description">
                         Um dos maiores festivais gratuitos de jazz e blues da América Latina com artistas internacionais!
                     </p>
-                    <button class="card-button">
-                        <span>ENTRADA GRATUITA</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>RESERVAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 9 -->
-            <div class="event-card" data-category="show">
+            <div class="event-card" data-category="show" data-event-id="9" data-event-name="Circo Voador 2025" data-event-price="80.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/circovoador/400/250.jpg" alt="Circo Voador 2025">
                     <div class="card-badge">SHOW</div>
@@ -321,14 +322,14 @@
                     <p class="card-description">
                         Programação especial com diversos artistas no icônico espaço cultural carioca!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 10 -->
-            <div class="event-card" data-category="show">
+            <div class="event-card" data-category="show" data-event-id="10" data-event-name="Aterro do Flamengo" data-event-price="0.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/atroflamengo/400/250.jpg" alt="Aterro do Flamengo">
                     <div class="card-badge">EVENTO</div>
@@ -352,14 +353,14 @@
                     <p class="card-description">
                         Grande evento ao ar livre com música, gastronomia e entretenimento para toda a família!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>RESERVAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 11 -->
-            <div class="event-card" data-category="show">
+            <div class="event-card" data-category="show" data-event-id="11" data-event-name="System of a Down" data-event-price="320.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/systemofadown/400/250.jpg" alt="System of a Down">
                     <div class="card-badge">SHOW</div>
@@ -383,14 +384,14 @@
                     <p class="card-description">
                         A lendária banda de metal alternativo retorna ao Brasil para shows épicos no Allianz Parque!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
 
             <!-- Card 12 -->
-            <div class="event-card" data-category="show">
+            <div class="event-card" data-category="show" data-event-id="12" data-event-name="Shakira" data-event-price="380.00">
                 <div class="card-image-container">
                     <img src="https://picsum.photos/seed/shakira/400/250.jpg" alt="Shakira">
                     <div class="card-badge">SHOW</div>
@@ -414,8 +415,8 @@
                     <p class="card-description">
                         A rainha do pop latino traz sua turnê mundial ao Brasil com um show inesquecível!
                     </p>
-                    <button class="card-button">
-                        <span>GARANTIR INGRESSO</span>
+                    <button class="card-button buy-ticket-btn">
+                        <span>COMPRAR INGRESSO</span>
                     </button>
                 </div>
             </div>
@@ -427,6 +428,93 @@
             <p>Tente ajustar seus filtros ou buscar por outro termo.</p>
         </div>
     </div>
+
+    <!-- Modal de Compra de Ingressos -->
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>COMPRAR INGRESSOS</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="event-info-modal">
+                    <img id="modalEventImage" src="" alt="">
+                    <div class="event-details-modal">
+                        <h3 id="modalEventName"></h3>
+                        <p id="modalEventDate"></p>
+                        <p id="modalEventLocation"></p>
+                    </div>
+                </div>
+
+                <form id="ticketForm" class="ticket-form">
+                    <input type="hidden" id="eventId" name="eventId">
+                    
+                    <div class="form-group">
+                        <label for="ticketType">Tipo de Ingresso</label>
+                        <select id="ticketType" name="ticketType">
+                            <option value="normal">Normal</option>
+                            <option value="vip">VIP</option>
+                            <option value="meia-entrada">Meia-entrada</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantidade</label>
+                        <div class="quantity-selector">
+                            <button type="button" class="quantity-btn" id="decreaseQty">-</button>
+                            <input type="number" id="quantity" name="quantity" class="quantity-input" value="1" min="1" max="10" readonly>
+                            <button type="button" class="quantity-btn" id="increaseQty">+</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Forma de Pagamento</label>
+                        <div class="payment-methods">
+                            <div class="payment-method selected" data-payment="credit">
+                                <i>💳</i>
+                                <span>Cartão</span>
+                            </div>
+                            <div class="payment-method" data-payment="pix">
+                                <i>📱</i>
+                                <span>Pix</span>
+                            </div>
+                            <div class="payment-method" data-payment="boleto">
+                                <i>📄</i>
+                                <span>Boleto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-summary">
+                        <div>
+                            <h3>Total</h3>
+                            <p id="ticketPrice">R$ 0,00</p>
+                        </div>
+                        <div>
+                            <p id="totalPrice">R$ 0,00</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-cancel" id="cancelPurchase">Cancelar</button>
+                <button type="button" class="btn-purchase" id="confirmPurchase">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Meus Ingressos -->
+    <section class="my-tickets" id="myTickets">
+        <h2>🎟️ MEUS INGRESSOS</h2>
+        <div class="tickets-grid" id="ticketsGrid">
+            <!-- Os ingressos serão carregados aqui via JavaScript/PHP -->
+            <div class="no-tickets">
+                <i>🎫</i>
+                <p>Você ainda não comprou nenhum ingresso.</p>
+                <p>Compre ingressos para os eventos acima e eles aparecerão aqui!</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Seção de Contato -->
     <section class="contact-info-section">
@@ -613,34 +701,259 @@
             emptyState.classList.toggle('active', visibleCount === 0);
         });
 
-        // Animação dos botões dos cards
-        document.querySelectorAll('.card-button').forEach(button => {
-            button.addEventListener('click', (e) => {
-                const card = e.target.closest('.event-card');
-                const title = card.querySelector('.card-title').textContent;
+        // Modal de Compra de Ingressos
+        const modal = document.getElementById('ticketModal');
+        const modalEventName = document.getElementById('modalEventName');
+        const modalEventDate = document.getElementById('modalEventDate');
+        const modalEventLocation = document.getElementById('modalEventLocation');
+        const modalEventImage = document.getElementById('modalEventImage');
+        const eventIdInput = document.getElementById('eventId');
+        const ticketTypeSelect = document.getElementById('ticketType');
+        const quantityInput = document.getElementById('quantity');
+        const ticketPriceElement = document.getElementById('ticketPrice');
+        const totalPriceElement = document.getElementById('totalPrice');
+        const decreaseBtn = document.getElementById('decreaseQty');
+        const increaseBtn = document.getElementById('increaseQty');
+        const confirmBtn = document.getElementById('confirmPurchase');
+        const cancelBtn = document.getElementById('cancelPurchase');
+        const closeModal = document.querySelector('.close');
+        
+        let currentEventPrice = 0;
+        let selectedPaymentMethod = 'credit';
+
+        // Adicionar evento de clique aos botões de compra
+        document.querySelectorAll('.buy-ticket-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.event-card');
+                const eventId = card.getAttribute('data-event-id');
+                const eventName = card.getAttribute('data-event-name');
+                const eventPrice = parseFloat(card.getAttribute('data-event-price'));
                 
-                // Efeito de ripple
-                const ripple = document.createElement('span');
-                ripple.style.position = 'absolute';
-                ripple.style.width = ripple.style.height = '100px';
-                ripple.style.background = 'rgba(255, 255, 255, 0.5)';
-                ripple.style.borderRadius = '50%';
-                ripple.style.transform = 'scale(0)';
-                ripple.style.animation = 'ripple 0.6s ease-out';
+                // Preencher informações do modal
+                eventIdInput.value = eventId;
+                modalEventName.textContent = eventName;
+                modalEventDate.textContent = card.querySelector('.card-date').textContent;
+                modalEventLocation.textContent = card.querySelector('.card-info-item:nth-child(2) span:nth-child(2)').textContent;
+                modalEventImage.src = card.querySelector('.card-image-container img').src;
                 
-                button.appendChild(ripple);
+                // Definir preço inicial
+                currentEventPrice = eventPrice;
+                updatePrice();
                 
-                setTimeout(() => ripple.remove(), 600);
+                // Resetar formulário
+                quantityInput.value = 1;
+                ticketTypeSelect.value = 'normal';
+                document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('selected'));
+                document.querySelector('.payment-method[data-payment="credit"]').classList.add('selected');
+                selectedPaymentMethod = 'credit';
                 
-                // Alert de sucesso
-                alert(`🎉 Interesse registrado em: ${title}\n\nEm breve você receberá mais informações!`);
+                // Abrir modal
+                modal.style.display = 'block';
             });
         });
+
+        // Fechar modal
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        cancelBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Controles de quantidade
+        decreaseBtn.addEventListener('click', () => {
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+                updatePrice();
+            }
+        });
+
+        increaseBtn.addEventListener('click', () => {
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue < 10) {
+                quantityInput.value = currentValue + 1;
+                updatePrice();
+            }
+        });
+
+        // Seleção de método de pagamento
+        document.querySelectorAll('.payment-method').forEach(method => {
+            method.addEventListener('click', () => {
+                document.querySelectorAll('.payment-method').forEach(el => el.classList.remove('selected'));
+                method.classList.add('selected');
+                selectedPaymentMethod = method.getAttribute('data-payment');
+            });
+        });
+
+        // Atualizar preço
+        function updatePrice() {
+            const quantity = parseInt(quantityInput.value);
+            const ticketType = ticketTypeSelect.value;
+            let priceMultiplier = 1;
+            
+            if (ticketType === 'vip') {
+                priceMultiplier = 1.8;
+            } else if (ticketType === 'meia-entrada') {
+                priceMultiplier = 0.5;
+            }
+            
+            const unitPrice = currentEventPrice * priceMultiplier;
+            const totalPrice = unitPrice * quantity;
+            
+            ticketPriceElement.textContent = `R$ ${unitPrice.toFixed(2).replace('.', ',')}`;
+            totalPriceElement.textContent = `R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
+        }
+
+        ticketTypeSelect.addEventListener('change', updatePrice);
+
+        // Confirmar compra
+        confirmBtn.addEventListener('click', () => {
+            const eventId = eventIdInput.value;
+            const quantity = quantityInput.value;
+            const ticketType = ticketTypeSelect.value;
+            
+            // Simulação de envio para o servidor
+            // Em um ambiente real, aqui seria feita uma requisição AJAX para o backend
+            
+            // Gerar código do ingresso
+            const ticketCode = generateTicketCode();
+            
+            // Criar objeto com os dados do ingresso
+            const ticketData = {
+                eventId: eventId,
+                eventName: modalEventName.textContent,
+                eventDate: modalEventDate.textContent,
+                eventLocation: modalEventLocation.textContent,
+                quantity: quantity,
+                ticketType: ticketType,
+                totalPrice: totalPriceElement.textContent,
+                ticketCode: ticketCode,
+                purchaseDate: new Date().toLocaleDateString('pt-BR'),
+                paymentMethod: selectedPaymentMethod
+            };
+            
+            // Salvar no localStorage (simulando salvamento no banco)
+            saveTicketToUser(ticketData);
+            
+            // Fechar modal
+            modal.style.display = 'none';
+            
+            // Mostrar mensagem de sucesso
+            showNotification('Compra realizada com sucesso! Seu ingresso foi adicionado à sua lista.', 'success');
+            
+            // Atualizar a seção de ingressos
+            loadUserTickets();
+        });
+
+        // Gerar código do ingresso
+        function generateTicketCode() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let code = '';
+            for (let i = 0; i < 10; i++) {
+                code += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return code;
+        }
+
+        // Salvar ingresso para o usuário
+        function saveTicketToUser(ticketData) {
+            // Obter ingressos existentes ou criar array vazio
+            let userTickets = JSON.parse(localStorage.getItem('userTickets')) || [];
+            
+            // Adicionar novo ingresso
+            userTickets.push(ticketData);
+            
+            // Salvar no localStorage
+            localStorage.setItem('userTickets', JSON.stringify(userTickets));
+        }
+
+        // Carregar ingressos do usuário
+        function loadUserTickets() {
+            const ticketsGrid = document.getElementById('ticketsGrid');
+            const userTickets = JSON.parse(localStorage.getItem('userTickets')) || [];
+            
+            if (userTickets.length === 0) {
+                ticketsGrid.innerHTML = `
+                    <div class="no-tickets">
+                        <i>🎫</i>
+                        <p>Você ainda não comprou nenhum ingresso.</p>
+                        <p>Compre ingressos para os eventos acima e eles aparecerão aqui!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            ticketsGrid.innerHTML = '';
+            
+            userTickets.forEach(ticket => {
+                const ticketCard = document.createElement('div');
+                ticketCard.className = 'ticket-card';
+                ticketCard.innerHTML = `
+                    <div class="ticket-header">
+                        <h3>${ticket.eventName}</h3>
+                    </div>
+                    <div class="ticket-body">
+                        <div class="ticket-info">
+                            <i>📅</i>
+                            <span>${ticket.eventDate}</span>
+                        </div>
+                        <div class="ticket-info">
+                            <i>📍</i>
+                            <span>${ticket.eventLocation}</span>
+                        </div>
+                        <div class="ticket-info">
+                            <i>🎟️</i>
+                            <span>${ticket.quantity}x ${ticket.ticketType}</span>
+                        </div>
+                        <div class="ticket-info">
+                            <i>💰</i>
+                            <span>${ticket.totalPrice}</span>
+                        </div>
+                        <div class="ticket-code">
+                            ${ticket.ticketCode}
+                        </div>
+                        <div class="ticket-actions">
+                            <a href="#" class="btn-ticket">Ver Detalhes</a>
+                            <a href="#" class="btn-ticket">Baixar PDF</a>
+                        </div>
+                    </div>
+                `;
+                ticketsGrid.appendChild(ticketCard);
+            });
+        }
+
+        // Sistema de notificações
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
 
         // Form submit
         document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            showNotification('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
             e.target.reset();
         });
 
@@ -675,21 +988,46 @@
             });
         });
 
-        // Adicionar animação CSS para ripple
+        // Adicionar estilos CSS para notificações
         const style = document.createElement('style');
         style.textContent = `
-            @keyframes ripple {
-                to {
-                    transform: scale(4);
-                    opacity: 0;
-                }
+            .notification {
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                padding: 15px 25px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 600;
+                z-index: 2000;
+                transform: translateX(120%);
+                transition: transform 0.3s ease;
+            }
+            
+            .notification.success {
+                background: linear-gradient(135deg, rgba(0, 255, 234, 0.8), rgba(0, 255, 234, 0.6));
+                border-left: 4px solid #00ffea;
+            }
+            
+            .notification.error {
+                background: linear-gradient(135deg, rgba(255, 0, 127, 0.8), rgba(255, 0, 127, 0.6));
+                border-left: 4px solid #ff007f;
+            }
+            
+            .notification.show {
+                transform: translateX(0);
             }
         `;
         document.head.appendChild(style);
 
+        // Carregar ingressos do usuário ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            loadUserTickets();
+        });
+
         // Console customizado
         console.log('%c🎭 BK EVENTOS - GALERIA', 'color: #00ffea; font-size: 24px; font-weight: bold;');
-        console.log('%c✨ Galeria com filtros e busca avançada!', 'color: #ff007f; font-size: 14px;');
+        console.log('%c✨ Galeria com sistema de compra de ingressos!', 'color: #ff007f; font-size: 14px;');
     </script>
 </body>
 </html>
